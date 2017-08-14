@@ -17,4 +17,4 @@ The TMRpcm library runs with wav files with the following features:
 - Audio channels: mono
 - PCM format: 8-bit, unsigned
 
-You can use [thi onlie converter](http://audio.online-convert.com/convert-to-wav) to prepare the wav files to store in the SD card.
+You can use [this onlie converter](http://audio.online-convert.com/convert-to-wav) to prepare the wav files to store in the SD card.
