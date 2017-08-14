@@ -1,5 +1,5 @@
 # arduino_play_sound
-Playing sounds from convention (at most 8 characters + dot + 3 extension characters).SD card with arduino UNO.
+Playing sounds from SD card with arduino UNO.
 
 - Using [TMRpcm](https://github.com/TMRh20/TMRpcm) library to read .wav files from SD card and convert them to analog signal.
 
