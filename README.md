@@ -8,7 +8,7 @@ Playing sounds from SD card with arduino UNO.
 ![sd sound player](media/sd_sound_player.jpg)
 
 ## SD card file format
-According [SD Arduino reference page], SD card should be formatted to FAT16 or FAT32 file system, and file names have to fulfill 8.3 naming convention (at most 8 characters + dot + 3 extension characters).
+According [SD Arduino reference page](https://www.arduino.cc/en/Reference/SD), SD card should be formatted to FAT16 or FAT32 file system, and file names have to fulfill 8.3 naming convention (at most 8 characters + dot + 3 extension characters).
 
 ## .wav file format
 The TMRpcm library runs with wav files with the following features:
