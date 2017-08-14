@@ -22,9 +22,6 @@ void setup()
 	//To blink the fixed led at pin 13
  	pinMode(PIN_LED, OUTPUT);
 
-	//opens serial port, sets data rate to 9600 bps, Useful for debugging
-	Serial.begin(SERIAL_BAUD_RATE);
-
 	//set chip select pin as output
  	pinMode(PIN_SD_CS, OUTPUT);
 
@@ -45,31 +42,8 @@ void setup()
 //main loop
 void loop()
 {
-	File text_file;
-	unsigned char file_byte;
-
 	//blink the led 13
 	digitalWrite(PIN_LED, HIGH);
-
-	//play a tone
-	//tone(PIN_SPEAKER, 440);
-	//delay(500);
-	//noTone(PIN_SPEAKER);
-
-	//read a text file and send bytes throughh serial comm
-	text_file = SD.open("prova.txt", FILE_READ);
-	if (text_file)
-	{
-		while ( text_file.available() )
-		{
-			file_byte = text_file.read();
-	  		Serial.write(file_byte);
-			//Serial.print(" - ");
-			//Serial.println(file_byte);
-		}
-		Serial.println("");
-	}
-	text_file.close();
 
 	//play sounds
 	tmrpcm.play("traffic.wav");
